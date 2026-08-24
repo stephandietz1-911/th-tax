@@ -1677,6 +1677,11 @@
         color: 'text-purple-400',
         title: isDe ? 'Altersvorsorgefonds (RMF / SSF / ThaiESG)' : 'Retirement Funds (RMF / SSF / ThaiESG)',
         text: isDe
+          ? 'Investitionen in thailändische Altersvorsorgefonds (RMF, SSF oder ThaiESG) können das zu versteuernde Einkommen spürbar senken.'
+          : 'Investments in qualifying Thai retirement funds (RMF, SSF, ThaiESG) provide significant tax deductions.'
+      });
+    }
+
     if (result.incomes.employmentIncome > 200000) {
       tips.push({
         icon: 'info',
