@@ -115,3 +115,39 @@ input[type=range] {
     max-height: 260px !important;
   }
 }
+
+/* Expandable Footer Details & Summary Styling */
+.legal-details {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.legal-details:hover {
+  border-color: rgba(100, 116, 139, 0.8);
+}
+
+.legal-details[open] {
+  background: rgba(30, 41, 59, 0.75);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.legal-details summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.legal-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.legal-details summary .chevron-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.legal-details[open] summary .chevron-icon {
+  transform: rotate(180deg);
+}

@@ -679,6 +679,112 @@
 
   </main>
 
+  <!-- Legal & Editorial Expandable Section -->
+  <section class="mt-12 border-t border-slate-800/80 bg-slate-950/40 pt-8 pb-4 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800/60 pb-3">
+        <div class="flex items-center gap-2">
+          <i data-lucide="scale" class="w-4 h-4 text-blue-400"></i>
+          <h2 class="text-xs font-bold text-slate-300 uppercase tracking-wider" id="lblLegalSectionHeader">Rechtliche & Redaktionelle Hinweise</h2>
+        </div>
+        <span class="text-[11px] text-slate-500" id="lblLegalClickHint">Klicken zum Aufklappen</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5" id="legalAccordionGroup">
+
+        <!-- 1. Haftungsausschluss (Disclaimer) -->
+        <details class="legal-details p-4">
+          <summary class="flex items-center justify-between font-semibold text-slate-200 hover:text-white">
+            <span class="flex items-center gap-2.5">
+              <i data-lucide="shield-alert" class="w-4 h-4 text-amber-400"></i>
+              <span id="lblLegalTitle1">1. Haftungsausschluss (Disclaimer)</span>
+            </span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-slate-400"></i>
+          </summary>
+          <div class="mt-3.5 pt-3 border-t border-slate-800 text-slate-300 text-xs leading-relaxed space-y-2" id="lblLegalContent1">
+            <p>Die auf dieser Website bereitgestellten Berechnungen, Modelle und Informationen dienen ausschließlich der allgemeinen Orientierung und unverbindlichen Information nach dem thailändischen Steuerrecht (Thai Revenue Code für das Steuerjahr 2026).</p>
+            <p><strong>Diese Anwendung stellt ausdrücklich keine steuerliche, rechtliche oder wirtschaftliche Beratung dar.</strong> Die Berechnungen ersetzen keinesfalls eine individuelle und fachkundige Prüfung durch einen lizenzierten Steuerberater, Rechtsanwalt oder zertifizierten Wirtschaftsprüfer (Certified Public Accountant – CPA) in Thailand.</p>
+            <p>Obwohl alle Berechnungsformeln und gesetzlichen Stufen sorgfältig recherchiert und überprüft wurden, wird jegliche Haftung oder Gewährleistung für die Richtigkeit, Vollständigkeit, Aktualität oder Anwendbarkeit der Ergebnisse ausgeschlossen. <strong>Die Nutzung dieser Anwendung erfolgt vollumfänglich auf eigene Verantwortung und Gefahr.</strong></p>
+          </div>
+        </details>
+
+        <!-- 2. Impressum & Kontakt -->
+        <details class="legal-details p-4">
+          <summary class="flex items-center justify-between font-semibold text-slate-200 hover:text-white">
+            <span class="flex items-center gap-2.5">
+              <i data-lucide="user-check" class="w-4 h-4 text-blue-400"></i>
+              <span id="lblLegalTitle2">2. Impressum & Kontakt</span>
+            </span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-slate-400"></i>
+          </summary>
+          <div class="mt-3.5 pt-3 border-t border-slate-800 text-slate-300 text-xs leading-relaxed space-y-2.5" id="lblLegalContent2">
+            <div>
+              <span class="font-bold text-slate-200 block text-[11px] uppercase tracking-wider text-slate-400" id="lblLegalRespLabel">Inhaltlich Verantwortlicher:</span>
+              <p class="font-medium text-slate-100 mt-1">Stephan Dietz</p>
+              <p class="text-slate-300">414/312 Building B Jomtien Complex Condotel,<br>Moo12, Nongprue, Banglamung, Chonburi 20150, Thailand</p>
+            </div>
+            <div class="pt-2 border-t border-slate-800/60">
+              <span class="font-bold text-slate-200 block text-[11px] uppercase tracking-wider text-slate-400" id="lblLegalStatusLabel">Projektstatus & Gemeinnützigkeit:</span>
+              <p class="text-slate-300 mt-0.5" id="lblLegalStatusText">Dies ist ein <strong>rein privates, nicht-kommerzielles und vollständig werbefreies Projekt</strong>, das ohne jegliche Gewinnerzielungsabsicht der Allgemeinheit und Expat-Community frei zur Verfügung gestellt wird. Es werden weder entgeltliche Dienstleistungen noch Vermittlungen angeboten.</p>
+            </div>
+          </div>
+        </details>
+
+        <!-- 3. Datenschutz (Privacy Policy - PDPA / DSGVO) -->
+        <details class="legal-details p-4">
+          <summary class="flex items-center justify-between font-semibold text-slate-200 hover:text-white">
+            <span class="flex items-center gap-2.5">
+              <i data-lucide="lock" class="w-4 h-4 text-emerald-400"></i>
+              <span id="lblLegalTitle3">3. Datenschutz (Privacy Policy - PDPA / DSGVO)</span>
+            </span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-slate-400"></i>
+          </summary>
+          <div class="mt-3.5 pt-3 border-t border-slate-800 text-slate-300 text-xs leading-relaxed space-y-2.5" id="lblLegalContent3">
+            <div>
+              <span class="font-bold text-emerald-300 flex items-center gap-1.5" id="lblPrivacyLocalTitle">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                100% Lokale Client-Side-Verarbeitung (Zero Data Storage)
+              </span>
+              <p class="text-slate-300 mt-1" id="lblPrivacyLocalText">Ihre finanziellen und persönlichen Eingaben (Gehälter, Mieteinnahmen, Alter, Auslandsüberträge, Freibeträge) werden <strong>ausschließlich lokal in Ihrem Webbrowser</strong> berechnet. Zu keinem Zeitpunkt werden Ihre Daten an externe Server übertragen, in Datenbanken gespeichert oder ausgewertet.</p>
+            </div>
+            <div class="pt-2 border-t border-slate-800/60">
+              <span class="font-bold text-slate-200 block text-[11px] uppercase tracking-wider text-slate-400" id="lblPrivacyAnalyticsTitle">Anonyme Besucherzählung (Ohne Cookies / No-Tracking):</span>
+              <p class="text-slate-300 mt-0.5" id="lblPrivacyAnalyticsText">Zur rein aggregierten Reichweitenmessung wird ein datensparsames, anonymes Zählskript ohne Tracking-Cookies oder Fingerprinting verwendet. Es werden keine personenbezogenen Daten erfasst (konform mit PDPA Thailand & EU-DSGVO).</p>
+            </div>
+          </div>
+        </details>
+
+        <!-- 4. KI-Transparenz & Qualitätssicherung -->
+        <details class="legal-details p-4">
+          <summary class="flex items-center justify-between font-semibold text-slate-200 hover:text-white">
+            <span class="flex items-center gap-2.5">
+              <i data-lucide="cpu" class="w-4 h-4 text-purple-400"></i>
+              <span id="lblLegalTitle4">4. KI-Transparenz & Qualitätssicherung</span>
+            </span>
+            <i data-lucide="chevron-down" class="chevron-icon w-4 h-4 text-slate-400"></i>
+          </summary>
+          <div class="mt-3.5 pt-3 border-t border-slate-800 text-slate-300 text-xs leading-relaxed space-y-2.5" id="lblLegalContent4">
+            <div>
+              <span class="font-bold text-purple-300 flex items-center gap-1.5" id="lblAiTitle">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                Einsatz generativer KI
+              </span>
+              <p class="text-slate-300 mt-1" id="lblAiText">Bei der Konzeption, Code-Generierung, Benutzeroberfläche und zweisprachigen Übersetzung dieser Anwendung wurden moderne generative KI-Systeme unterstützend eingesetzt.</p>
+            </div>
+            <div class="pt-2 border-t border-slate-800/60">
+              <span class="font-bold text-emerald-300 flex items-center gap-1.5" id="lblHumanVerifyTitle">
+                <i data-lucide="check-check" class="w-3.5 h-3.5"></i>
+                Manuelle menschliche Verifikation der Steuerlogik
+              </span>
+              <p class="text-slate-300 mt-1" id="lblHumanVerifyText"><strong>Alle thailändischen Steuersätze, Progressionsstufen (0%–35%), Standard-Abzüge (50% max. 100k THB, 30% Miete), Senioren-Freibeträge (190.000 THB ab 65 J.) und KMU-/SME-Regelungen wurden manuell durch einen Menschen anhand des offiziellen Thai Revenue Code 2026 überprüft und mittels automatisierter Testsuiten validiert.</strong></p>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="border-t border-slate-800 bg-slate-900 py-5 mt-12 text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">

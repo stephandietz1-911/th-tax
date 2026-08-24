@@ -124,6 +124,26 @@
       footerCopy: "© 2026 Thailand Steuer APP • Gemäß Thai Revenue Code Neuregelung",
       footerRates: "Progressive PIT Staffelung (0%–35%) & SME CIT (0%–20%)",
 
+      // Legal & Editorial Accordion
+      lblLegalSectionHeader: "Rechtliche & Redaktionelle Hinweise",
+      lblLegalClickHint: "Klicken zum Aufklappen",
+      lblLegalTitle1: "1. Haftungsausschluss (Disclaimer)",
+      lblLegalContent1: `<p>Die auf dieser Website bereitgestellten Berechnungen, Modelle und Informationen dienen ausschließlich der allgemeinen Orientierung und unverbindlichen Information nach dem thailändischen Steuerrecht (Thai Revenue Code für das Steuerjahr 2026).</p><p><strong>Diese Anwendung stellt ausdrücklich keine steuerliche, rechtliche oder wirtschaftliche Beratung dar.</strong> Die Berechnungen ersetzen keinesfalls eine individuelle und fachkundige Prüfung durch einen lizenzierten Steuerberater, Rechtsanwalt oder zertifizierten Wirtschaftsprüfer (Certified Public Accountant – CPA) in Thailand.</p><p>Obwohl alle Berechnungsformeln und gesetzlichen Stufen sorgfältig recherchiert und überprüft wurden, wird jegliche Haftung oder Gewährleistung für die Richtigkeit, Vollständigkeit, Aktualität oder Anwendbarkeit der Ergebnisse ausgeschlossen. <strong>Die Nutzung dieser Anwendung erfolgt vollumfänglich auf eigene Verantwortung und Gefahr.</strong></p>`,
+      lblLegalTitle2: "2. Impressum & Kontakt",
+      lblLegalRespLabel: "Inhaltlich Verantwortlicher:",
+      lblLegalStatusLabel: "Projektstatus & Gemeinnützigkeit:",
+      lblLegalStatusText: "Dies ist ein <strong>rein privates, nicht-kommerzielles und vollständig werbefreies Projekt</strong>, das ohne jegliche Gewinnerzielungsabsicht der Allgemeinheit und Expat-Community frei zur Verfügung gestellt wird. Es werden weder entgeltliche Dienstleistungen noch Vermittlungen angeboten.",
+      lblLegalTitle3: "3. Datenschutz (Privacy Policy - PDPA / DSGVO)",
+      lblPrivacyLocalTitle: "100% Lokale Client-Side-Verarbeitung (Zero Data Storage)",
+      lblPrivacyLocalText: "Ihre finanziellen und persönlichen Eingaben (Gehälter, Mieteinnahmen, Alter, Auslandsüberträge, Freibeträge) werden <strong>ausschließlich lokal in Ihrem Webbrowser</strong> berechnet. Zu keinem Zeitpunkt werden Ihre Daten an externe Server übertragen, in Datenbanken gespeichert oder ausgewertet.",
+      lblPrivacyAnalyticsTitle: "Anonyme Besucherzählung (Ohne Cookies / No-Tracking):",
+      lblPrivacyAnalyticsText: "Zur rein aggregierten Reichweitenmessung wird ein datensparsames, anonymes Zählskript ohne Tracking-Cookies oder Fingerprinting verwendet. Es werden keine personenbezogenen Daten erfasst (konform mit PDPA Thailand & EU-DSGVO).",
+      lblLegalTitle4: "4. KI-Transparenz & Qualitätssicherung",
+      lblAiTitle: "Einsatz generativer KI",
+      lblAiText: "Bei der Konzeption, Code-Generierung, Benutzeroberfläche und zweisprachigen Übersetzung dieser Anwendung wurden moderne generative KI-Systeme unterstützend eingesetzt.",
+      lblHumanVerifyTitle: "Manuelle menschliche Verifikation der Steuerlogik",
+      lblHumanVerifyText: "<strong>Alle thailändischen Steuersätze, Progressionsstufen (0%–35%), Standard-Abzüge (50% max. 100k THB, 30% Miete), Senioren-Freibeträge (190.000 THB ab 65 J.) und KMU-/SME-Regelungen wurden manuell durch einen Menschen anhand des offiziellen Thai Revenue Code 2026 überprüft und mittels automatisierter Testsuiten validiert.</strong>",
+
       // Print Report
       printReportTitle: "Thailand Steuer-Berechnungsbericht 2026",
       printReportSubtitlePIT: "Persönliche Einkommensteuer (PIT) 2026",
@@ -242,6 +262,26 @@
       lblVisitorTitle: "Visitor Counter:",
       footerCopy: "© 2026 Thailand Tax App • Compliant with Thai Revenue Code Updates",
       footerRates: "Progressive PIT Brackets (0%–35%) & SME CIT (0%–20%)",
+
+      // Legal & Editorial Accordion
+      lblLegalSectionHeader: "Legal & Editorial Notices",
+      lblLegalClickHint: "Click to expand",
+      lblLegalTitle1: "1. Legal Disclaimer",
+      lblLegalContent1: `<p>The calculations, tax models, and information provided on this website are for general orientation and indicative informational purposes only, based on the Thai Revenue Code for the tax assessment year 2026.</p><p><strong>This application explicitly does not constitute professional tax, legal, or financial advice.</strong> The calculations do not substitute for a qualified, individual evaluation by a licensed tax advisor, legal counsel, or Certified Public Accountant (CPA) in Thailand.</p><p>While all statutory tax tiers, allowances, and algorithms have been thoroughly researched and verified, no liability or warranty is assumed for the accuracy, completeness, timeliness, or fitness for purpose of any results. <strong>Use of this tool is strictly at your own risk.</strong></p>`,
+      lblLegalTitle2: "2. Legal Notice & Contact",
+      lblLegalRespLabel: "Responsible for Content:",
+      lblLegalStatusLabel: "Project Status & Non-Commercial Notice:",
+      lblLegalStatusText: "This is a <strong>strictly private, non-commercial, and 100% ad-free open-source project</strong> provided to the community free of charge without any commercial interest or monetization. No paid services are offered or mediated.",
+      lblLegalTitle3: "3. Privacy Policy (PDPA / GDPR)",
+      lblPrivacyLocalTitle: "100% Local Client-Side Processing (Zero Data Storage)",
+      lblPrivacyLocalText: "All income, assets, age, family, and tax allowance inputs are <strong>processed entirely within your local web browser (client-side)</strong>. At no time is any personal or financial information stored on, transmitted to, or recorded by any external server or database.",
+      lblPrivacyAnalyticsTitle: "Anonymous Visitor Analytics (Cookie-Free / No-Tracking):",
+      lblPrivacyAnalyticsText: "To measure aggregate page visits without tracking users, a privacy-respecting anonymous counter is embedded. No tracking cookies are stored, no personally identifiable information (PII) is captured, and no user profiles are generated (compliant with Thailand PDPA & EU GDPR).",
+      lblLegalTitle4: "4. AI Transparency & Quality Assurance",
+      lblAiTitle: "Use of Generative AI",
+      lblAiText: "This application was developed with the assistance of modern generative AI tools to support software engineering, code structuring, UI styling, and bilingual content preparation.",
+      lblHumanVerifyTitle: "Human-Verified Tax Logic",
+      lblHumanVerifyText: "<strong>All statutory Thai tax brackets, progressive rates (0%–35%), standard deductions (50% max 100k THB, 30% rental deduction), senior citizen exemptions (190,000 THB for age 65+), and corporate SME thresholds have been meticulously verified by a human against official Thai Revenue Code 2026 guidelines, cross-checked for mathematical precision, and validated via automated test suites.</strong>",
 
       // Print Report
       printReportTitle: "Thailand Tax Assessment Report 2026",
@@ -901,7 +941,27 @@
       lblDisclaimerText: document.getElementById('lblDisclaimerText'),
       lblVisitorTitle: document.getElementById('lblVisitorTitle'),
       footerCopy: document.getElementById('footerCopy'),
-      footerRates: document.getElementById('footerRates')
+      footerRates: document.getElementById('footerRates'),
+
+      // Legal Section
+      lblLegalSectionHeader: document.getElementById('lblLegalSectionHeader'),
+      lblLegalClickHint: document.getElementById('lblLegalClickHint'),
+      lblLegalTitle1: document.getElementById('lblLegalTitle1'),
+      lblLegalContent1: document.getElementById('lblLegalContent1'),
+      lblLegalTitle2: document.getElementById('lblLegalTitle2'),
+      lblLegalRespLabel: document.getElementById('lblLegalRespLabel'),
+      lblLegalStatusLabel: document.getElementById('lblLegalStatusLabel'),
+      lblLegalStatusText: document.getElementById('lblLegalStatusText'),
+      lblLegalTitle3: document.getElementById('lblLegalTitle3'),
+      lblPrivacyLocalTitle: document.getElementById('lblPrivacyLocalTitle'),
+      lblPrivacyLocalText: document.getElementById('lblPrivacyLocalText'),
+      lblPrivacyAnalyticsTitle: document.getElementById('lblPrivacyAnalyticsTitle'),
+      lblPrivacyAnalyticsText: document.getElementById('lblPrivacyAnalyticsText'),
+      lblLegalTitle4: document.getElementById('lblLegalTitle4'),
+      lblAiTitle: document.getElementById('lblAiTitle'),
+      lblAiText: document.getElementById('lblAiText'),
+      lblHumanVerifyTitle: document.getElementById('lblHumanVerifyTitle'),
+      lblHumanVerifyText: document.getElementById('lblHumanVerifyText')
     };
   }
 
@@ -1019,6 +1079,26 @@
     if (elements.lblDisclaimerTitle) elements.lblDisclaimerTitle.textContent = t.lblDisclaimerTitle;
     if (elements.lblDisclaimerText) elements.lblDisclaimerText.innerHTML = t.lblDisclaimerText;
     if (elements.lblVisitorTitle) elements.lblVisitorTitle.textContent = t.lblVisitorTitle;
+
+    // Legal & Editorial Accordion
+    if (elements.lblLegalSectionHeader) elements.lblLegalSectionHeader.textContent = t.lblLegalSectionHeader;
+    if (elements.lblLegalClickHint) elements.lblLegalClickHint.textContent = t.lblLegalClickHint;
+    if (elements.lblLegalTitle1) elements.lblLegalTitle1.textContent = t.lblLegalTitle1;
+    if (elements.lblLegalContent1) elements.lblLegalContent1.innerHTML = t.lblLegalContent1;
+    if (elements.lblLegalTitle2) elements.lblLegalTitle2.textContent = t.lblLegalTitle2;
+    if (elements.lblLegalRespLabel) elements.lblLegalRespLabel.textContent = t.lblLegalRespLabel;
+    if (elements.lblLegalStatusLabel) elements.lblLegalStatusLabel.textContent = t.lblLegalStatusLabel;
+    if (elements.lblLegalStatusText) elements.lblLegalStatusText.innerHTML = t.lblLegalStatusText;
+    if (elements.lblLegalTitle3) elements.lblLegalTitle3.textContent = t.lblLegalTitle3;
+    if (elements.lblPrivacyLocalTitle) elements.lblPrivacyLocalTitle.innerHTML = `<i data-lucide="shield-check" class="w-3.5 h-3.5 mr-1 inline"></i>${t.lblPrivacyLocalTitle}`;
+    if (elements.lblPrivacyLocalText) elements.lblPrivacyLocalText.innerHTML = t.lblPrivacyLocalText;
+    if (elements.lblPrivacyAnalyticsTitle) elements.lblPrivacyAnalyticsTitle.textContent = t.lblPrivacyAnalyticsTitle;
+    if (elements.lblPrivacyAnalyticsText) elements.lblPrivacyAnalyticsText.textContent = t.lblPrivacyAnalyticsText;
+    if (elements.lblLegalTitle4) elements.lblLegalTitle4.textContent = t.lblLegalTitle4;
+    if (elements.lblAiTitle) elements.lblAiTitle.innerHTML = `<i data-lucide="sparkles" class="w-3.5 h-3.5 mr-1 inline"></i>${t.lblAiTitle}`;
+    if (elements.lblAiText) elements.lblAiText.textContent = t.lblAiText;
+    if (elements.lblHumanVerifyTitle) elements.lblHumanVerifyTitle.innerHTML = `<i data-lucide="check-check" class="w-3.5 h-3.5 mr-1 inline"></i>${t.lblHumanVerifyTitle}`;
+    if (elements.lblHumanVerifyText) elements.lblHumanVerifyText.innerHTML = t.lblHumanVerifyText;
 
     const visitorBadgeImg = document.getElementById('visitorBadgeImg');
     if (visitorBadgeImg) {
