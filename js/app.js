@@ -1677,8 +1677,25 @@
         color: 'text-purple-400',
         title: isDe ? 'Altersvorsorgefonds (RMF / SSF / ThaiESG)' : 'Retirement Funds (RMF / SSF / ThaiESG)',
         text: isDe
-          ? 'Investitionen in thailändische Altersvorsorgefonds (RMF, SSF oder ThaiESG) können das zu versteuernde Einkommen spürbar senken.'
-          : 'Investments in qualifying Thai retirement funds (RMF, SSF, ThaiESG) provide significant tax deductions.'
+    if (result.incomes.employmentIncome > 200000) {
+      tips.push({
+        icon: 'info',
+        color: 'text-cyan-400',
+        title: isDe ? 'Deckelung des Arbeitnehmer-Abzugs' : 'Employment Deduction Capped',
+        text: isDe
+          ? 'Der 50%-Pauschalabzug für Gehaltseinkünfte ist bei 100.000 THB gedeckelt und wurde in Ihrer Berechnung voll ausgeschöpft.'
+          : 'The 50% standard expense deduction for employment income is capped at 100,000 THB and has been fully utilized in your calculation.'
+      });
+    }
+
+    if (tips.length === 0) {
+      tips.push({
+        icon: 'thumbs-up',
+        color: 'text-emerald-400',
+        title: isDe ? 'Optimale Strukturierung' : 'Optimal Tax Structure',
+        text: isDe
+          ? 'Ihre Freibeträge und Einkünfte sind optimal auf das thailändische Steuerjahr 2026 abgestimmt.'
+          : 'Your allowances and deductions are optimized for Thai tax year 2026.'
       });
     }
 
