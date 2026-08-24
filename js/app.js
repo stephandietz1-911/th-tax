@@ -120,6 +120,7 @@
       lblTipsTitle: "Wichtige Steuerhinweise & Optimierungspotenziale (2026)",
       lblDisclaimerTitle: "Wichtiger rechtlicher Hinweis & Haftungsausschluss (Keine Steuerberatung)",
       lblDisclaimerText: "Diese App bietet lediglich eine unverbindliche Orientierung und Modellrechnung auf Basis der thailändischen Steuervorschriften 2026. <strong>Wir führen keine Steuerberatung durch.</strong> Steuergesetze und Doppelbesteuerungsabkommen (DBA) unterliegen individuellen Sachverhalten. Für rechtssichere und verbindliche Auskünfte oder Steuererklärungen (z.B. P.N.D.90 / 91 / 50) ist zwingend ein offiziell eingetragener Steuerberater bzw. Wirtschaftsprüfer (CPA) zu konsultieren.",
+      lblVisitorTitle: "Besucherzähler:",
       footerCopy: "© 2026 Thailand Steuer APP • Gemäß Thai Revenue Code Neuregelung",
       footerRates: "Progressive PIT Staffelung (0%–35%) & SME CIT (0%–20%)",
 
@@ -238,6 +239,7 @@
       lblTipsTitle: "Key Tax Insights & Optimization Tips (2026)",
       lblDisclaimerTitle: "Important Legal Notice & Disclaimer (No Tax Advice)",
       lblDisclaimerText: "This app provides an indicative overview and calculation model based on Thai tax rules for 2026. <strong>We do not provide professional tax advice.</strong> Tax regulations and Double Taxation Agreements (DTA) require individual assessment. For legally binding advice and official tax filings (P.N.D.90 / 91 / 50), you must consult a licensed, registered tax advisor or Certified Public Accountant (CPA) in Thailand.",
+      lblVisitorTitle: "Visitor Counter:",
       footerCopy: "© 2026 Thailand Tax App • Compliant with Thai Revenue Code Updates",
       footerRates: "Progressive PIT Brackets (0%–35%) & SME CIT (0%–20%)",
 
@@ -897,6 +899,7 @@
       taxTipsContainer: document.getElementById('taxTipsContainer'),
       lblDisclaimerTitle: document.getElementById('lblDisclaimerTitle'),
       lblDisclaimerText: document.getElementById('lblDisclaimerText'),
+      lblVisitorTitle: document.getElementById('lblVisitorTitle'),
       footerCopy: document.getElementById('footerCopy'),
       footerRates: document.getElementById('footerRates')
     };
@@ -1015,6 +1018,14 @@
     if (elements.lblTipsTitle) elements.lblTipsTitle.innerHTML = `<i data-lucide="sparkles" class="w-4 h-4 mr-1 inline"></i>${t.lblTipsTitle}`;
     if (elements.lblDisclaimerTitle) elements.lblDisclaimerTitle.textContent = t.lblDisclaimerTitle;
     if (elements.lblDisclaimerText) elements.lblDisclaimerText.innerHTML = t.lblDisclaimerText;
+    if (elements.lblVisitorTitle) elements.lblVisitorTitle.textContent = t.lblVisitorTitle;
+
+    const visitorBadgeImg = document.getElementById('visitorBadgeImg');
+    if (visitorBadgeImg) {
+      const label = lang === 'en' ? 'Views' : 'Aufrufe';
+      visitorBadgeImg.src = `https://hits.sh/stephandietz1-911.github.io/th-tax.svg?style=flat-square&label=${label}&color=2563eb&labelColor=1e293b`;
+    }
+
     if (elements.footerCopy) elements.footerCopy.textContent = t.footerCopy;
     if (elements.footerRates) elements.footerRates.textContent = t.footerRates;
 

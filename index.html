@@ -680,10 +680,23 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-800 bg-slate-900 py-4 mt-12 text-center text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-      <p id="footerCopy">© 2026 Thailand Steuer APP • Gemäß Thai Revenue Code Neuregelung</p>
-      <p class="text-slate-400" id="footerRates">Progressive PIT Staffelung (0%–35%) & SME CIT (0%–20%)</p>
+  <footer class="border-t border-slate-800 bg-slate-900 py-5 mt-12 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>
+        <p id="footerCopy" class="font-medium text-slate-400">© 2026 Thailand Steuer APP • Gemäß Thai Revenue Code Neuregelung</p>
+        <p class="text-slate-500 text-[11px] mt-0.5" id="footerRates">Progressive PIT Staffelung (0%–35%) & SME CIT (0%–20%)</p>
+      </div>
+
+      <!-- Live Self-Incrementing Visitor Counter Badge -->
+      <div class="flex items-center gap-2 bg-slate-950/80 px-3.5 py-2 rounded-xl border border-slate-800 shadow-inner">
+        <span class="flex items-center gap-1.5 text-xs text-slate-300 font-semibold" id="lblVisitor">
+          <i data-lucide="eye" class="w-4 h-4 text-blue-400"></i>
+          <span id="lblVisitorTitle">Besucherzähler:</span>
+        </span>
+        <a href="https://hits.sh/stephandietz1-911.github.io/th-tax/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center transition hover:opacity-90">
+          <img id="visitorBadgeImg" alt="Visitor Counter" src="https://hits.sh/stephandietz1-911.github.io/th-tax.svg?style=flat-square&label=Aufrufe&color=2563eb&labelColor=1e293b" class="h-5 rounded">
+        </a>
+      </div>
     </div>
   </footer>
 
