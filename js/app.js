@@ -118,6 +118,8 @@
       lblChartNetProfit: "Reingewinn nach Steuern",
       lblChartCitTax: "Körperschaftsteuer (CIT)",
       lblTipsTitle: "Wichtige Steuerhinweise & Optimierungspotenziale (2026)",
+      lblDisclaimerTitle: "Wichtiger rechtlicher Hinweis & Haftungsausschluss (Keine Steuerberatung)",
+      lblDisclaimerText: "Diese App bietet lediglich eine unverbindliche Orientierung und Modellrechnung auf Basis der thailändischen Steuervorschriften 2026. <strong>Wir führen keine Steuerberatung durch.</strong> Steuergesetze und Doppelbesteuerungsabkommen (DBA) unterliegen individuellen Sachverhalten. Für rechtssichere und verbindliche Auskünfte oder Steuererklärungen (z.B. P.N.D.90 / 91 / 50) ist zwingend ein offiziell eingetragener Steuerberater bzw. Wirtschaftsprüfer (CPA) zu konsultieren.",
       footerCopy: "© 2026 Thailand Steuer APP • Gemäß Thai Revenue Code Neuregelung",
       footerRates: "Progressive PIT Staffelung (0%–35%) & SME CIT (0%–20%)",
 
@@ -127,7 +129,7 @@
       printReportSubtitleCIT: "Körperschaftsteuer (CIT) 2026",
       printCreated: "Erstellt am:",
       printTableHeading: "Detaillierte Stufenaufstellung",
-      printDisclaimer: "Hinweis: Diese Berechnung dient der Information und Planung nach dem thailändischen Revenue Code 2026. Für verbindliche steuerliche Erklärungen (P.N.D.90 / 91 / 50) wird die Konsultation eines qualifizierten thailändischen Steuerberaters empfohlen."
+      printDisclaimer: "Wichtiger Hinweis: Dieser Bericht dient ausschließlich der unverbindlichen Orientierung und Information. Er stellt keine Steuerberatung dar. Für rechtssichere, verbindliche Steuererklärungen und Prüfungen ist die Konsultation eines lizenzierten Steuerberaters bzw. CPA in Thailand erforderlich."
     },
     en: {
       appTitle: "Thailand Tax App",
@@ -234,6 +236,8 @@
       lblChartNetProfit: "Net Profit After Tax",
       lblChartCitTax: "Corporate Tax (CIT)",
       lblTipsTitle: "Key Tax Insights & Optimization Tips (2026)",
+      lblDisclaimerTitle: "Important Legal Notice & Disclaimer (No Tax Advice)",
+      lblDisclaimerText: "This app provides an indicative overview and calculation model based on Thai tax rules for 2026. <strong>We do not provide professional tax advice.</strong> Tax regulations and Double Taxation Agreements (DTA) require individual assessment. For legally binding advice and official tax filings (P.N.D.90 / 91 / 50), you must consult a licensed, registered tax advisor or Certified Public Accountant (CPA) in Thailand.",
       footerCopy: "© 2026 Thailand Tax App • Compliant with Thai Revenue Code Updates",
       footerRates: "Progressive PIT Brackets (0%–35%) & SME CIT (0%–20%)",
 
@@ -243,7 +247,7 @@
       printReportSubtitleCIT: "Corporate Income Tax (CIT) 2026",
       printCreated: "Generated on:",
       printTableHeading: "Detailed Bracket Breakdown",
-      printDisclaimer: "Disclaimer: This calculation is for informational and planning purposes under the Thai Revenue Code 2026. For official tax filings (P.N.D.90 / 91 / 50), consultation with a qualified Thai tax professional is recommended."
+      printDisclaimer: "Important Notice: This report is for informational and orientation purposes only and does not constitute professional tax advice. For legally binding tax assessments and official filings, consultation with a licensed tax advisor or CPA in Thailand is required."
     }
   };
 
@@ -891,6 +895,8 @@
       taxChartCanvas: document.getElementById('taxChart'),
       lblTipsTitle: document.getElementById('lblTipsTitle'),
       taxTipsContainer: document.getElementById('taxTipsContainer'),
+      lblDisclaimerTitle: document.getElementById('lblDisclaimerTitle'),
+      lblDisclaimerText: document.getElementById('lblDisclaimerText'),
       footerCopy: document.getElementById('footerCopy'),
       footerRates: document.getElementById('footerRates')
     };
@@ -1007,6 +1013,8 @@
     if (elements.tfTotal) elements.tfTotal.textContent = t.tfTotal;
     if (elements.lblChartTitle) elements.lblChartTitle.innerHTML = `<i data-lucide="pie-chart" class="w-4 h-4 text-purple-400 mr-1 inline"></i>${t.lblChartTitle}`;
     if (elements.lblTipsTitle) elements.lblTipsTitle.innerHTML = `<i data-lucide="sparkles" class="w-4 h-4 mr-1 inline"></i>${t.lblTipsTitle}`;
+    if (elements.lblDisclaimerTitle) elements.lblDisclaimerTitle.textContent = t.lblDisclaimerTitle;
+    if (elements.lblDisclaimerText) elements.lblDisclaimerText.innerHTML = t.lblDisclaimerText;
     if (elements.footerCopy) elements.footerCopy.textContent = t.footerCopy;
     if (elements.footerRates) elements.footerRates.textContent = t.footerRates;
 
