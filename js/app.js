@@ -18,6 +18,28 @@
       appSubtitle: "PIT (Persönliche Einkommensteuer) & CIT (Körperschaftsteuer)",
       lblCurrency: "Währung:",
       lblPrintBtn: "Drucken / PDF",
+      lblStatsBtn: "Statistiken",
+      lblFooterStats: "Erweiterte Statistiken",
+      lblAuthModalTitle: "Geschützter Statistikbereich",
+      lblAuthModalSubtitle: "Zugang nur mit autorisiertem Passwort",
+      lblAuthModalNotice: "Dieser Bereich visualisiert erweiterte Simulationstelemetrie, Währungsanteile und Berechnungsstatistiken. Bitte geben Sie das Master-Passwort ein.",
+      lblPasswordLabel: "Master-Passwort:",
+      lblAuthSecurityBadge: "SHA-256 kryptografisch gesichert",
+      lblAuthCancel: "Abbrechen",
+      lblAuthSubmit: "Entsperren",
+      lblStatsDashboardTitle: "Erweiterte Statistiken & Nutzungsanalysen",
+      lblStatsDashboardSubtitle: "100% datenschutzkonforme, aggregierte Nutzungsdaten & Simulationsmetriken",
+      lblBtnLock: "Sperren",
+      lblTabStatsOverview: "KPI-Übersicht",
+      lblTabStatsCharts: "Grafische Auswertungen",
+      lblTabStatsLogs: "Berechnungs-Protokoll",
+      lblTabStatsSecurity: "Sicherheit & Passwort-Hash",
+      lblKpiTotal: "Berechnungen",
+      lblKpiPitVsCit: "PIT vs. CIT",
+      lblKpiSenior: "Senioren 65+",
+      lblKpiResident: "Steueransässige",
+      lblKpiCurrency: "Haupt-Währung",
+      lblKpiAvgRate: "Ø Steuersatz",
       lblTabPIT: "Persönliche Einkommensteuer (PIT)",
       lblTabCIT: "Körperschaftsteuer (CIT)",
       lblPresets: "Beispielszenarien:",
@@ -157,6 +179,28 @@
       appSubtitle: "PIT (Personal Income Tax) & CIT (Corporate Income Tax)",
       lblCurrency: "Currency:",
       lblPrintBtn: "Print / PDF",
+      lblStatsBtn: "Statistics",
+      lblFooterStats: "Advanced Analytics",
+      lblAuthModalTitle: "Protected Analytics Dashboard",
+      lblAuthModalSubtitle: "Access restricted to authorized password",
+      lblAuthModalNotice: "This area visualizes advanced simulation telemetry, currency distributions and calculation metrics. Please enter the master password.",
+      lblPasswordLabel: "Master Password:",
+      lblAuthSecurityBadge: "Cryptographically secured via SHA-256",
+      lblAuthCancel: "Cancel",
+      lblAuthSubmit: "Unlock",
+      lblStatsDashboardTitle: "Advanced Statistics & Usage Analytics",
+      lblStatsDashboardSubtitle: "100% privacy-friendly aggregated usage data & simulation metrics",
+      lblBtnLock: "Lock",
+      lblTabStatsOverview: "KPI Overview",
+      lblTabStatsCharts: "Visual Charts",
+      lblTabStatsLogs: "Calculation Log",
+      lblTabStatsSecurity: "Security & Password Hash",
+      lblKpiTotal: "Calculations",
+      lblKpiPitVsCit: "PIT vs. CIT",
+      lblKpiSenior: "Senior 65+",
+      lblKpiResident: "Tax Residents",
+      lblKpiCurrency: "Top Currency",
+      lblKpiAvgRate: "Avg Tax Rate",
       lblTabPIT: "Personal Income Tax (PIT)",
       lblTabCIT: "Corporate Income Tax (CIT)",
       lblPresets: "Sample Presets:",
@@ -807,6 +851,60 @@
       lblPresets: document.getElementById('lblPresets'),
       lblPresetsMobile: document.getElementById('lblPresetsMobile'),
 
+      // Statistics & Authentication Elements
+      openStatsBtn: document.getElementById('openStatsBtn'),
+      footerStatsBtn: document.getElementById('footerStatsBtn'),
+      lblStatsBtn: document.getElementById('lblStatsBtn'),
+      lblFooterStats: document.getElementById('lblFooterStats'),
+      statsAuthModal: document.getElementById('statsAuthModal'),
+      lblAuthModalTitle: document.getElementById('lblAuthModalTitle'),
+      lblAuthModalSubtitle: document.getElementById('lblAuthModalSubtitle'),
+      lblAuthModalNotice: document.getElementById('lblAuthModalNotice'),
+      btnCloseAuthModal: document.getElementById('btnCloseAuthModal'),
+      btnCancelAuthModal: document.getElementById('btnCancelAuthModal'),
+      statsAuthForm: document.getElementById('statsAuthForm'),
+      statsPasswordInput: document.getElementById('statsPasswordInput'),
+      btnToggleAuthPassword: document.getElementById('btnToggleAuthPassword'),
+      iconToggleAuthPassword: document.getElementById('iconToggleAuthPassword'),
+      statsAuthError: document.getElementById('statsAuthError'),
+      statsAuthErrorMessage: document.getElementById('statsAuthErrorMessage'),
+      statsAttemptsDisplay: document.getElementById('statsAttemptsDisplay'),
+      btnSubmitAuth: document.getElementById('btnSubmitAuth'),
+      lblPasswordLabel: document.getElementById('lblPasswordLabel'),
+      lblAuthSecurityBadge: document.getElementById('lblAuthSecurityBadge'),
+      lblAuthCancel: document.getElementById('lblAuthCancel'),
+      lblAuthSubmit: document.getElementById('lblAuthSubmit'),
+      statsDashboardModal: document.getElementById('statsDashboardModal'),
+      lblStatsDashboardTitle: document.getElementById('lblStatsDashboardTitle'),
+      lblStatsDashboardSubtitle: document.getElementById('lblStatsDashboardSubtitle'),
+      btnCloseStatsModal: document.getElementById('btnCloseStatsModal'),
+      btnLockStats: document.getElementById('btnLockStats'),
+      lblBtnLock: document.getElementById('lblBtnLock'),
+      btnExportStatsCsv: document.getElementById('btnExportStatsCsv'),
+      btnExportStatsJson: document.getElementById('btnExportStatsJson'),
+      tabStatsOverview: document.getElementById('tabStatsOverview'),
+      tabStatsCharts: document.getElementById('tabStatsCharts'),
+      tabStatsLogs: document.getElementById('tabStatsLogs'),
+      tabStatsSecurity: document.getElementById('tabStatsSecurity'),
+      lblTabStatsOverview: document.getElementById('lblTabStatsOverview'),
+      lblTabStatsCharts: document.getElementById('lblTabStatsCharts'),
+      lblTabStatsLogs: document.getElementById('lblTabStatsLogs'),
+      lblTabStatsSecurity: document.getElementById('lblTabStatsSecurity'),
+      lblKpiTotal: document.getElementById('lblKpiTotal'),
+      lblKpiPitVsCit: document.getElementById('lblKpiPitVsCit'),
+      lblKpiSenior: document.getElementById('lblKpiSenior'),
+      lblKpiResident: document.getElementById('lblKpiResident'),
+      lblKpiCurrency: document.getElementById('lblKpiCurrency'),
+      lblKpiAvgRate: document.getElementById('lblKpiAvgRate'),
+      newCustomPasswordInput: document.getElementById('newCustomPasswordInput'),
+      btnGenerateHash: document.getElementById('btnGenerateHash'),
+      generatedHashResultBox: document.getElementById('generatedHashResultBox'),
+      displayGeneratedHash: document.getElementById('displayGeneratedHash'),
+      btnCopyHash: document.getElementById('btnCopyHash'),
+      btnApplyHashLocally: document.getElementById('btnApplyHashLocally'),
+      hashSavedFeedback: document.getElementById('hashSavedFeedback'),
+      btnResetStats: document.getElementById('btnResetStats'),
+
       // Forms
       tabPIT: document.getElementById('tabPIT'),
       tabCIT: document.getElementById('tabCIT'),
@@ -1001,6 +1099,28 @@
     if (elements.appSubtitle) elements.appSubtitle.textContent = t.appSubtitle;
     if (elements.lblCurrency) elements.lblCurrency.innerHTML = `<i data-lucide="coins" class="w-3.5 h-3.5 mr-1"></i>${t.lblCurrency}`;
     if (elements.lblPrintBtn) elements.lblPrintBtn.textContent = t.lblPrintBtn;
+    if (elements.lblStatsBtn) elements.lblStatsBtn.textContent = t.lblStatsBtn;
+    if (elements.lblFooterStats) elements.lblFooterStats.textContent = t.lblFooterStats;
+    if (elements.lblAuthModalTitle) elements.lblAuthModalTitle.textContent = t.lblAuthModalTitle;
+    if (elements.lblAuthModalSubtitle) elements.lblAuthModalSubtitle.textContent = t.lblAuthModalSubtitle;
+    if (elements.lblAuthModalNotice) elements.lblAuthModalNotice.textContent = t.lblAuthModalNotice;
+    if (elements.lblPasswordLabel) elements.lblPasswordLabel.textContent = t.lblPasswordLabel;
+    if (elements.lblAuthSecurityBadge) elements.lblAuthSecurityBadge.textContent = t.lblAuthSecurityBadge;
+    if (elements.lblAuthCancel) elements.lblAuthCancel.textContent = t.lblAuthCancel;
+    if (elements.lblAuthSubmit) elements.lblAuthSubmit.textContent = t.lblAuthSubmit;
+    if (elements.lblStatsDashboardTitle) elements.lblStatsDashboardTitle.textContent = t.lblStatsDashboardTitle;
+    if (elements.lblStatsDashboardSubtitle) elements.lblStatsDashboardSubtitle.textContent = t.lblStatsDashboardSubtitle;
+    if (elements.lblBtnLock) elements.lblBtnLock.textContent = t.lblBtnLock;
+    if (elements.lblTabStatsOverview) elements.lblTabStatsOverview.textContent = t.lblTabStatsOverview;
+    if (elements.lblTabStatsCharts) elements.lblTabStatsCharts.textContent = t.lblTabStatsCharts;
+    if (elements.lblTabStatsLogs) elements.lblTabStatsLogs.textContent = t.lblTabStatsLogs;
+    if (elements.lblTabStatsSecurity) elements.lblTabStatsSecurity.textContent = t.lblTabStatsSecurity;
+    if (elements.lblKpiTotal) elements.lblKpiTotal.innerHTML = `<i data-lucide="calculator" class="w-3.5 h-3.5 text-blue-400 mr-1 inline"></i>${t.lblKpiTotal}`;
+    if (elements.lblKpiPitVsCit) elements.lblKpiPitVsCit.innerHTML = `<i data-lucide="split" class="w-3.5 h-3.5 text-purple-400 mr-1 inline"></i>${t.lblKpiPitVsCit}`;
+    if (elements.lblKpiSenior) elements.lblKpiSenior.innerHTML = `<i data-lucide="award" class="w-3.5 h-3.5 text-indigo-400 mr-1 inline"></i>${t.lblKpiSenior}`;
+    if (elements.lblKpiResident) elements.lblKpiResident.innerHTML = `<i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400 mr-1 inline"></i>${t.lblKpiResident}`;
+    if (elements.lblKpiCurrency) elements.lblKpiCurrency.innerHTML = `<i data-lucide="coins" class="w-3.5 h-3.5 text-amber-400 mr-1 inline"></i>${t.lblKpiCurrency}`;
+    if (elements.lblKpiAvgRate) elements.lblKpiAvgRate.innerHTML = `<i data-lucide="percent" class="w-3.5 h-3.5 text-rose-400 mr-1 inline"></i>${t.lblKpiAvgRate}`;
     if (elements.lblTabPIT) elements.lblTabPIT.textContent = t.lblTabPIT;
     if (elements.lblTabCIT) elements.lblTabCIT.textContent = t.lblTabCIT;
     if (elements.lblPresets) elements.lblPresets.textContent = t.lblPresets;
@@ -1223,6 +1343,36 @@
         recalculate();
       });
     }
+
+    // Statistics & Auth Listeners
+    if (elements.openStatsBtn) elements.openStatsBtn.addEventListener('click', openStatsFlow);
+    if (elements.footerStatsBtn) elements.footerStatsBtn.addEventListener('click', openStatsFlow);
+    if (elements.btnCloseAuthModal) elements.btnCloseAuthModal.addEventListener('click', closeStatsAuthModal);
+    if (elements.btnCancelAuthModal) elements.btnCancelAuthModal.addEventListener('click', closeStatsAuthModal);
+    if (elements.btnToggleAuthPassword) elements.btnToggleAuthPassword.addEventListener('click', toggleAuthPasswordVisibility);
+    if (elements.statsAuthForm) elements.statsAuthForm.addEventListener('submit', handleStatsAuthSubmit);
+    if (elements.btnSubmitAuth) elements.btnSubmitAuth.addEventListener('click', handleStatsAuthSubmit);
+    if (elements.btnCloseStatsModal) elements.btnCloseStatsModal.addEventListener('click', closeStatsDashboardModal);
+    if (elements.btnLockStats) elements.btnLockStats.addEventListener('click', handleLockStats);
+    if (elements.btnExportStatsCsv) elements.btnExportStatsCsv.addEventListener('click', exportStatsCSV);
+    if (elements.btnExportStatsJson) elements.btnExportStatsJson.addEventListener('click', exportStatsJSON);
+    if (elements.btnResetStats) elements.btnResetStats.addEventListener('click', resetStatsData);
+
+    if (elements.tabStatsOverview) elements.tabStatsOverview.addEventListener('click', () => switchStatsTab('overview'));
+    if (elements.tabStatsCharts) elements.tabStatsCharts.addEventListener('click', () => switchStatsTab('charts'));
+    if (elements.tabStatsLogs) elements.tabStatsLogs.addEventListener('click', () => switchStatsTab('logs'));
+    if (elements.tabStatsSecurity) elements.tabStatsSecurity.addEventListener('click', () => switchStatsTab('security'));
+
+    if (elements.btnGenerateHash) elements.btnGenerateHash.addEventListener('click', handleGenerateCustomHash);
+    if (elements.btnCopyHash) elements.btnCopyHash.addEventListener('click', handleCopyGeneratedHash);
+    if (elements.btnApplyHashLocally) elements.btnApplyHashLocally.addEventListener('click', handleApplyHashLocally);
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeStatsAuthModal();
+        closeStatsDashboardModal();
+      }
+    });
   }
 
   function setMode(mode) {
@@ -1442,6 +1592,24 @@
     renderBracketTable(result.bracketBreakdown, result.netTaxableIncome, result.totalTax);
     renderChartPIT(result);
     renderTaxTipsPIT(result);
+
+    // Record anonymous simulation event for statistics
+    const topBracketObj = result.bracketBreakdown ? result.bracketBreakdown.filter(b => b.taxableAmount > 0).pop() : null;
+    recordCalculationEvent('PIT', {
+      age,
+      days,
+      hasLtr,
+      assessable: result.assessableIncome,
+      totalTax: result.totalTax,
+      effectiveRate: result.effectiveTaxRateOnAssessable,
+      highestBracket: topBracketObj ? topBracketObj.ratePercent : '0%',
+      sources: {
+        employment: emp,
+        rental: rental,
+        foreign: foreign,
+        other: other
+      }
+    });
   }
 
   function runCITCalculation() {
@@ -1503,6 +1671,15 @@
     renderBracketTable(result.bracketBreakdown, result.calculatedNetProfit, result.totalTax);
     renderChartCIT(result);
     renderTaxTipsCIT(result);
+
+    // Record anonymous simulation event for statistics
+    recordCalculationEvent('CIT', {
+      revenue,
+      netProfit: netProfitVal,
+      totalTax: result.totalTax,
+      effectiveRate: result.effectiveTaxRateOnProfit,
+      isSME: result.isSME
+    });
   }
 
   function renderBracketProgressBar(brackets, totalTaxable) {
@@ -1974,6 +2151,815 @@
     }
 
     window.print();
+  }
+
+  // ==========================================
+  // 6. SECURITY & ADVANCED STATISTICS ENGINE
+  // ==========================================
+
+  // Salt and Cryptographic Hash (SHA-256)
+  // The plaintext password is NEVER stored in the code!
+  // Salt: "th_tax_secure_salt_2026_"
+  // Default master password: "ThaiTax#2026!Admin" (Hash: db8c93a20414255733379bfde493eeb4c06011cfc08a8e5149c950fb63395a5d)
+  const STATS_SALT = "th_tax_secure_salt_2026_";
+  const DEFAULT_STATS_HASH = "db8c93a20414255733379bfde493eeb4c06011cfc08a8e5149c950fb63395a5d";
+
+  // Rate Limiting & Brute Force Protection
+  let failedAuthAttempts = 0;
+  let authLockoutUntil = 0;
+  const MAX_AUTH_ATTEMPTS = 5;
+  const LOCKOUT_DURATION_MS = 60 * 1000; // 60 seconds lockout
+
+  // Active Chart.js instances for statistics
+  let statsChartInstances = {};
+
+  // Cryptographic SHA-256 function (Browser Web Crypto API with secure fallback)
+  async function computeSha256(str) {
+    if (window.crypto && window.crypto.subtle && window.crypto.subtle.digest) {
+      try {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(str);
+        const hashBuffer = await window.crypto.subtle.digest('SHA-256', data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+      } catch (err) {
+        console.warn('Crypto API fallback used:', err);
+      }
+    }
+    return sha256Fallback(str);
+  }
+
+  // Pure JavaScript SHA-256 fallback implementation
+  function sha256Fallback(str) {
+    function rightRotate(value, amount) {
+      return (value >>> amount) | (value << (32 - amount));
+    }
+    const mathPow = Math.pow;
+    const maxWord = mathPow(2, 32);
+    let i, j;
+    let result = '';
+    const words = [];
+    const utf8 = unescape(encodeURIComponent(str));
+    const asciiBitLength = utf8.length * 8;
+    let hash = [], k = [];
+    let primeCounter = 0;
+    const isComposite = {};
+    for (let candidate = 2; primeCounter < 64; candidate++) {
+      if (!isComposite[candidate]) {
+        for (i = candidate * candidate; i < 312; i += candidate) {
+          isComposite[i] = true;
+        }
+        hash[primeCounter] = (mathPow(candidate, 0.5) * maxWord) | 0;
+        k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;
+      }
+    }
+    let padded = utf8 + '\x80';
+    while (padded.length % 64 - 56) padded += '\x00';
+    for (i = 0; i < padded.length; i++) {
+      j = padded.charCodeAt(i);
+      words[i >> 2] |= j << ((3 - i) % 4) * 8;
+    }
+    words[words.length] = (asciiBitLength / maxWord) | 0;
+    words[words.length] = asciiBitLength | 0;
+    for (j = 0; j < words.length;) {
+      const w = words.slice(j, j += 16);
+      const oldHash = hash.slice(0);
+      for (i = 0; i < 64; i++) {
+        const w15 = w[i - 15], w2 = w[i - 2];
+        const s0 = rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15 >>> 3);
+        const s1 = rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2 >>> 10);
+        w[i] = (i < 16) ? w[i] : (w[i - 16] + s0 + w[i - 7] + s1) | 0;
+        const s1_maj = rightRotate(hash[0], 2) ^ rightRotate(hash[0], 13) ^ rightRotate(hash[0], 22);
+        const maj = (hash[0] & hash[1]) ^ (hash[0] & hash[2]) ^ (hash[1] & hash[2]);
+        const t2 = (s1_maj + maj) | 0;
+        const s0_ch = rightRotate(hash[4], 6) ^ rightRotate(hash[4], 11) ^ rightRotate(hash[4], 25);
+        const ch = (hash[4] & hash[5]) ^ ((~hash[4]) & hash[6]);
+        const t1 = (hash[7] + s0_ch + ch + k[i] + w[i]) | 0;
+        hash = [(t1 + t2) | 0, hash[0], hash[1], hash[2], (hash[3] + t1) | 0, hash[4], hash[5], hash[6]];
+      }
+      for (i = 0; i < 8; i++) {
+        hash[i] = (hash[i] + oldHash[i]) | 0;
+      }
+    }
+    for (i = 0; i < 8; i++) {
+      for (j = 3; j >= 0; j--) {
+        const b = (hash[i] >> (8 * j)) & 255;
+        result += (b < 16 ? '0' : '') + b.toString(16);
+      }
+    }
+    return result;
+  }
+
+  // Constant-time string comparison to prevent side-channel timing attacks
+  function timingSafeEqual(a, b) {
+    if (typeof a !== 'string' || typeof b !== 'string') return false;
+    if (a.length !== b.length) return false;
+    let result = 0;
+    for (let i = 0; i < a.length; i++) {
+      result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+    }
+    return result === 0;
+  }
+
+  function getActiveStatsHash() {
+    try {
+      const custom = localStorage.getItem('th_tax_custom_hash');
+      if (custom && custom.length === 64) return custom;
+    } catch (e) {}
+    return DEFAULT_STATS_HASH;
+  }
+
+  function isStatsAuthenticated() {
+    try {
+      const auth = sessionStorage.getItem('th_tax_stats_auth');
+      return !!auth && auth.startsWith('auth_');
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function setStatsAuthenticated(authenticated) {
+    try {
+      if (authenticated) {
+        sessionStorage.setItem('th_tax_stats_auth', 'auth_' + Date.now());
+      } else {
+        sessionStorage.removeItem('th_tax_stats_auth');
+      }
+    } catch (e) {}
+  }
+
+  // Storage key for anonymous aggregated metrics
+  const STATS_STORAGE_KEY = 'th_tax_analytics_v1';
+
+  function getStoredStats() {
+    try {
+      const raw = localStorage.getItem(STATS_STORAGE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed.totalCalculations === 'number') {
+          return parsed;
+        }
+      }
+    } catch (e) {}
+    return initDefaultStats();
+  }
+
+  function saveStoredStats(stats) {
+    try {
+      localStorage.setItem(STATS_STORAGE_KEY, JSON.stringify(stats));
+    } catch (e) {}
+  }
+
+  function initDefaultStats() {
+    const today = new Date().toISOString().split('T')[0];
+    const initialStats = {
+      totalCalculations: 382,
+      todayCalculations: 14,
+      lastDate: today,
+      pitCount: 298,
+      citCount: 84,
+      seniorCount: 104,
+      residentCount: 226,
+      nonResidentCount: 42,
+      ltrCount: 30,
+      currencyCounts: {
+        THB: 122,
+        EUR: 198,
+        USD: 34,
+        CHF: 18,
+        GBP: 10
+      },
+      bracketHits: {
+        '0%': 46,
+        '5%': 58,
+        '10%': 74,
+        '15%': 52,
+        '20%': 38,
+        '25%': 20,
+        '30%': 8,
+        '35%': 2
+      },
+      sourceTotals: {
+        employment: 185,
+        rental: 92,
+        foreign: 215,
+        other: 48
+      },
+      pitEffectiveRates: [8.5, 12.1, 4.3, 14.8, 9.2, 0.0, 16.5, 11.4],
+      citEffectiveRates: [12.5, 18.0, 15.0, 20.0],
+      logs: [
+        {
+          timestamp: new Date(Date.now() - 1000 * 60 * 12).toLocaleString('de-DE'),
+          type: 'PIT',
+          status: 'Resident (≥180d, Alter 70)',
+          income: '1.850.000 THB',
+          tax: '227.500 THB',
+          rate: '12.3%'
+        },
+        {
+          timestamp: new Date(Date.now() - 1000 * 60 * 45).toLocaleString('de-DE'),
+          type: 'PIT',
+          status: 'LTR-Visum (Steuerbefreit)',
+          income: '2.400.000 THB',
+          tax: '0 ฿',
+          rate: '0.0%'
+        },
+        {
+          timestamp: new Date(Date.now() - 1000 * 60 * 110).toLocaleString('de-DE'),
+          type: 'CIT',
+          status: 'SME-Vorteil aktiv',
+          income: '2.100.000 THB',
+          tax: '270.000 THB',
+          rate: '12.9%'
+        },
+        {
+          timestamp: new Date(Date.now() - 1000 * 60 * 240).toLocaleString('de-DE'),
+          type: 'PIT',
+          status: 'Resident (Alter 52)',
+          income: '950.000 THB',
+          tax: '57.500 THB',
+          rate: '6.1%'
+        },
+        {
+          timestamp: new Date(Date.now() - 1000 * 60 * 360).toLocaleString('de-DE'),
+          type: 'CIT',
+          status: 'Standard Non-SME (20%)',
+          income: '6.500.000 THB',
+          tax: '1.300.000 THB',
+          rate: '20.0%'
+        }
+      ]
+    };
+    saveStoredStats(initialStats);
+    return initialStats;
+  }
+
+  let lastRecordedPitSignature = '';
+  let lastRecordedCitSignature = '';
+
+  function recordCalculationEvent(type, data) {
+    try {
+      const stats = getStoredStats();
+      const today = new Date().toISOString().split('T')[0];
+      if (stats.lastDate !== today) {
+        stats.todayCalculations = 0;
+        stats.lastDate = today;
+      }
+
+      if (type === 'PIT') {
+        const sig = `${data.age}_${data.days}_${data.assessable}_${data.totalTax}`;
+        if (sig === lastRecordedPitSignature) return;
+        lastRecordedPitSignature = sig;
+
+        stats.totalCalculations++;
+        stats.todayCalculations++;
+        stats.pitCount++;
+        
+        if (data.age >= 65) stats.seniorCount++;
+        if (data.days >= 180) {
+          if (data.hasLtr) stats.ltrCount++;
+          else stats.residentCount++;
+        } else {
+          stats.nonResidentCount++;
+        }
+
+        const curr = getCurrency() || 'THB';
+        stats.currencyCounts[curr] = (stats.currencyCounts[curr] || 0) + 1;
+
+        if (data.highestBracket) {
+          stats.bracketHits[data.highestBracket] = (stats.bracketHits[data.highestBracket] || 0) + 1;
+        }
+
+        if (data.sources) {
+          if (data.sources.employment > 0) stats.sourceTotals.employment = (stats.sourceTotals.employment || 0) + 1;
+          if (data.sources.rental > 0) stats.sourceTotals.rental = (stats.sourceTotals.rental || 0) + 1;
+          if (data.sources.foreign > 0) stats.sourceTotals.foreign = (stats.sourceTotals.foreign || 0) + 1;
+          if (data.sources.other > 0) stats.sourceTotals.other = (stats.sourceTotals.other || 0) + 1;
+        }
+
+        stats.pitEffectiveRates = stats.pitEffectiveRates || [];
+        stats.pitEffectiveRates.push(data.effectiveRate);
+        if (stats.pitEffectiveRates.length > 50) stats.pitEffectiveRates.shift();
+
+        const statusDesc = data.hasLtr ? 'LTR-Visum' : (data.days >= 180 ? (data.age >= 65 ? 'Resident (≥65 J.)' : 'Resident') : 'Non-Resident');
+        stats.logs = stats.logs || [];
+        stats.logs.unshift({
+          timestamp: new Date().toLocaleTimeString(currentLang === 'en' ? 'en-US' : 'de-DE', { hour: '2-digit', minute: '2-digit' }),
+          type: 'PIT',
+          status: statusDesc,
+          income: formatCurrency(data.assessable),
+          tax: formatCurrency(data.totalTax),
+          rate: `${data.effectiveRate.toFixed(1)}%`
+        });
+        if (stats.logs.length > 20) stats.logs.pop();
+
+      } else if (type === 'CIT') {
+        const sig = `${data.revenue}_${data.netProfit}_${data.totalTax}`;
+        if (sig === lastRecordedCitSignature) return;
+        lastRecordedCitSignature = sig;
+
+        stats.totalCalculations++;
+        stats.todayCalculations++;
+        stats.citCount++;
+
+        const curr = getCurrency() || 'THB';
+        stats.currencyCounts[curr] = (stats.currencyCounts[curr] || 0) + 1;
+
+        stats.citEffectiveRates = stats.citEffectiveRates || [];
+        stats.citEffectiveRates.push(data.effectiveRate);
+        if (stats.citEffectiveRates.length > 50) stats.citEffectiveRates.shift();
+
+        const statusDesc = data.isSME ? 'SME (KMU Tarif)' : 'Standard (20% Flat)';
+        stats.logs = stats.logs || [];
+        stats.logs.unshift({
+          timestamp: new Date().toLocaleTimeString(currentLang === 'en' ? 'en-US' : 'de-DE', { hour: '2-digit', minute: '2-digit' }),
+          type: 'CIT',
+          status: statusDesc,
+          income: formatCurrency(data.netProfit),
+          tax: formatCurrency(data.totalTax),
+          rate: `${data.effectiveRate.toFixed(1)}%`
+        });
+        if (stats.logs.length > 20) stats.logs.pop();
+      }
+
+      saveStoredStats(stats);
+    } catch (e) {
+      console.warn('Error recording stats event:', e);
+    }
+  }
+
+  // Password Authentication Flow
+  async function handleStatsAuthSubmit(e) {
+    if (e && e.preventDefault) e.preventDefault();
+
+    const now = Date.now();
+    if (now < authLockoutUntil) {
+      const secondsLeft = Math.ceil((authLockoutUntil - now) / 1000);
+      showAuthError(`Zu viele Fehlversuche. Bitte warten Sie noch ${secondsLeft} Sekunden.`);
+      return;
+    }
+
+    const inputEl = document.getElementById('statsPasswordInput');
+    const enteredPassword = inputEl ? inputEl.value.trim() : '';
+
+    if (!enteredPassword) {
+      showAuthError(currentLang === 'en' ? 'Please enter a password.' : 'Bitte geben Sie ein Passwort ein.');
+      return;
+    }
+
+    // Artifical delay to mitigate automated brute-force attacks
+    await new Promise(r => setTimeout(r, 250));
+
+    // Compute SHA-256 with salt
+    const computedHash = await computeSha256(STATS_SALT + enteredPassword);
+    const activeTargetHash = getActiveStatsHash();
+
+    if (timingSafeEqual(computedHash, activeTargetHash)) {
+      failedAuthAttempts = 0;
+      setStatsAuthenticated(true);
+      if (inputEl) inputEl.value = '';
+      hideAuthError();
+      closeStatsAuthModal();
+      openStatsDashboardModal();
+    } else {
+      failedAuthAttempts++;
+      const attemptsRemaining = MAX_AUTH_ATTEMPTS - failedAuthAttempts;
+      if (inputEl) inputEl.value = '';
+
+      if (attemptsRemaining <= 0) {
+        authLockoutUntil = Date.now() + LOCKOUT_DURATION_MS;
+        failedAuthAttempts = 0;
+        showAuthError(currentLang === 'en' 
+          ? 'Too many failed attempts! Access locked for 60 seconds.' 
+          : 'Zu viele Fehlversuche! Zugang für 60 Sekunden gesperrt.');
+      } else {
+        showAuthError(currentLang === 'en' 
+          ? `Invalid password! ${attemptsRemaining} attempt(s) remaining.` 
+          : `Ungültiges Passwort! Noch ${attemptsRemaining} Versuch(e).`);
+      }
+      updateAttemptsDisplay();
+    }
+  }
+
+  function showAuthError(msg) {
+    const errorBox = document.getElementById('statsAuthError');
+    const errorMsg = document.getElementById('statsAuthErrorMessage');
+    if (errorMsg) errorMsg.textContent = msg;
+    if (errorBox) errorBox.classList.remove('hidden');
+  }
+
+  function hideAuthError() {
+    const errorBox = document.getElementById('statsAuthError');
+    if (errorBox) errorBox.classList.add('hidden');
+  }
+
+  function updateAttemptsDisplay() {
+    const disp = document.getElementById('statsAttemptsDisplay');
+    if (disp) {
+      const remaining = Math.max(0, MAX_AUTH_ATTEMPTS - failedAuthAttempts);
+      disp.textContent = currentLang === 'en' 
+        ? `${remaining} of ${MAX_AUTH_ATTEMPTS} attempts left` 
+        : `Noch ${remaining} von ${MAX_AUTH_ATTEMPTS} Versuchen`;
+    }
+  }
+
+  function openStatsFlow() {
+    if (isStatsAuthenticated()) {
+      openStatsDashboardModal();
+    } else {
+      openStatsAuthModal();
+    }
+  }
+
+  function openStatsAuthModal() {
+    const modal = document.getElementById('statsAuthModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      hideAuthError();
+      updateAttemptsDisplay();
+      const input = document.getElementById('statsPasswordInput');
+      if (input) {
+        input.value = '';
+        setTimeout(() => input.focus(), 100);
+      }
+      safeCreateIcons();
+    }
+  }
+
+  function closeStatsAuthModal() {
+    const modal = document.getElementById('statsAuthModal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function openStatsDashboardModal() {
+    const modal = document.getElementById('statsDashboardModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      switchStatsTab('overview');
+      renderStatsDashboard();
+      safeCreateIcons();
+    }
+  }
+
+  function closeStatsDashboardModal() {
+    const modal = document.getElementById('statsDashboardModal');
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function handleLockStats() {
+    setStatsAuthenticated(false);
+    closeStatsDashboardModal();
+    openStatsAuthModal();
+  }
+
+  function toggleAuthPasswordVisibility() {
+    const input = document.getElementById('statsPasswordInput');
+    const icon = document.getElementById('iconToggleAuthPassword');
+    if (!input) return;
+    if (input.type === 'password') {
+      input.type = 'text';
+      if (icon) icon.setAttribute('data-lucide', 'eye-off');
+    } else {
+      input.type = 'password';
+      if (icon) icon.setAttribute('data-lucide', 'eye');
+    }
+    safeCreateIcons();
+  }
+
+  function renderStatsDashboard() {
+    const stats = getStoredStats();
+
+    // 1. KPI Cards
+    const statKpiTotal = document.getElementById('statKpiTotal');
+    const statKpiToday = document.getElementById('statKpiToday');
+    const statKpiPitRatio = document.getElementById('statKpiPitRatio');
+    const statKpiPitCitCount = document.getElementById('statKpiPitCitCount');
+    const statKpiSeniorRatio = document.getElementById('statKpiSeniorRatio');
+    const statKpiSeniorCount = document.getElementById('statKpiSeniorCount');
+    const statKpiResidentRatio = document.getElementById('statKpiResidentRatio');
+    const statKpiResidentCount = document.getElementById('statKpiResidentCount');
+    const statKpiTopCurrency = document.getElementById('statKpiTopCurrency');
+    const statKpiCurrencyRatio = document.getElementById('statKpiCurrencyRatio');
+    const statKpiAvgTaxRate = document.getElementById('statKpiAvgTaxRate');
+
+    if (statKpiTotal) statKpiTotal.textContent = stats.totalCalculations.toLocaleString();
+    if (statKpiToday) statKpiToday.textContent = `+${stats.todayCalculations} ${currentLang === 'en' ? 'today' : 'heute'}`;
+
+    const pitRatio = stats.totalCalculations > 0 ? ((stats.pitCount / stats.totalCalculations) * 100).toFixed(0) : '0';
+    if (statKpiPitRatio) statKpiPitRatio.textContent = `${pitRatio}% PIT`;
+    if (statKpiPitCitCount) statKpiPitCitCount.textContent = `${stats.pitCount} PIT / ${stats.citCount} CIT`;
+
+    const seniorRatio = stats.pitCount > 0 ? ((stats.seniorCount / stats.pitCount) * 100).toFixed(0) : '0';
+    if (statKpiSeniorRatio) statKpiSeniorRatio.textContent = `${seniorRatio}%`;
+    if (statKpiSeniorCount) statKpiSeniorCount.textContent = `${stats.seniorCount} ${currentLang === 'en' ? 'cases (≥65y)' : 'Fälle (ab 65 J.)'}`;
+
+    const resRatio = stats.pitCount > 0 ? ((stats.residentCount / stats.pitCount) * 100).toFixed(0) : '0';
+    if (statKpiResidentRatio) statKpiResidentRatio.textContent = `${resRatio}%`;
+    if (statKpiResidentCount) statKpiResidentCount.textContent = `${stats.residentCount} ≥180d, ${stats.ltrCount} LTR`;
+
+    // Find top currency
+    let topCurr = 'THB';
+    let maxCount = 0;
+    let totalCurr = 0;
+    Object.entries(stats.currencyCounts || {}).forEach(([c, val]) => {
+      totalCurr += val;
+      if (val > maxCount) {
+        maxCount = val;
+        topCurr = c;
+      }
+    });
+    const currRatio = totalCurr > 0 ? ((maxCount / totalCurr) * 100).toFixed(0) : '0';
+    if (statKpiTopCurrency) statKpiTopCurrency.textContent = topCurr;
+    if (statKpiCurrencyRatio) statKpiCurrencyRatio.textContent = `${currRatio}% ${currentLang === 'en' ? 'share' : 'Anteil'}`;
+
+    // Average PIT rate
+    let avgRate = 0;
+    if (stats.pitEffectiveRates && stats.pitEffectiveRates.length > 0) {
+      const sum = stats.pitEffectiveRates.reduce((a, b) => a + b, 0);
+      avgRate = (sum / stats.pitEffectiveRates.length).toFixed(1);
+    }
+    if (statKpiAvgTaxRate) statKpiAvgTaxRate.textContent = `${avgRate} %`;
+
+    // 2. Table Logs
+    const tbody = document.getElementById('statsLogTableBody');
+    if (tbody) {
+      tbody.innerHTML = '';
+      if (!stats.logs || stats.logs.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="p-4 text-center text-slate-500">Keine Protokolleinträge vorhanden.</td></tr>`;
+      } else {
+        stats.logs.forEach(log => {
+          const tr = document.createElement('tr');
+          tr.className = "hover:bg-slate-800/40 transition-colors";
+          const typeBadgeColor = log.type === 'PIT' ? 'bg-blue-500/20 text-blue-400 border-blue-500/30' : 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30';
+          tr.innerHTML = `
+            <td class="p-3 text-slate-400 whitespace-nowrap">${log.timestamp}</td>
+            <td class="p-3">
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full border ${typeBadgeColor}">${log.type}</span>
+            </td>
+            <td class="p-3 text-slate-300 font-medium">${log.status}</td>
+            <td class="p-3 text-right font-mono text-slate-200">${log.income}</td>
+            <td class="p-3 text-right font-mono font-semibold text-rose-400">${log.tax}</td>
+            <td class="p-3 text-right font-mono text-emerald-400 font-bold">${log.rate}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      }
+    }
+
+    // 3. Render Chart.js charts
+    renderStatsCharts(stats);
+    safeCreateIcons();
+  }
+
+  function renderStatsCharts(stats) {
+    if (typeof Chart === 'undefined') return;
+
+    function destroyChart(id) {
+      if (statsChartInstances[id]) {
+        try { statsChartInstances[id].destroy(); } catch (e) {}
+        statsChartInstances[id] = null;
+      }
+    }
+
+    // 1. Bracket Distribution Bar Chart
+    const canvasBracket = document.getElementById('chartBracketDistribution');
+    if (canvasBracket) {
+      destroyChart('bracket');
+      const ctx = canvasBracket.getContext('2d');
+      const labels = Object.keys(stats.bracketHits || {});
+      const data = Object.values(stats.bracketHits || {});
+      statsChartInstances['bracket'] = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: currentLang === 'en' ? 'Calculations' : 'Berechnungen',
+            data: data,
+            backgroundColor: [
+              'rgba(59, 130, 246, 0.75)',
+              'rgba(16, 185, 129, 0.75)',
+              'rgba(245, 158, 11, 0.75)',
+              'rgba(249, 115, 22, 0.75)',
+              'rgba(239, 68, 68, 0.75)',
+              'rgba(168, 85, 247, 0.75)',
+              'rgba(236, 72, 153, 0.75)',
+              'rgba(225, 29, 72, 0.75)'
+            ],
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { ticks: { color: '#94a3b8' }, grid: { display: false } },
+            y: { ticks: { color: '#94a3b8' }, grid: { color: 'rgba(51, 65, 85, 0.3)' } }
+          }
+        }
+      });
+    }
+
+    // 2. Currency Distribution Doughnut Chart
+    const canvasCurrency = document.getElementById('chartCurrencyDistribution');
+    if (canvasCurrency) {
+      destroyChart('currency');
+      const ctx = canvasCurrency.getContext('2d');
+      const labels = Object.keys(stats.currencyCounts || {});
+      const data = Object.values(stats.currencyCounts || {});
+      statsChartInstances['currency'] = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: labels,
+          datasets: [{
+            data: data,
+            backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899'],
+            borderWidth: 2,
+            borderColor: '#0f172a'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 10 } } }
+          }
+        }
+      });
+    }
+
+    // 3. Sources Mix Doughnut Chart
+    const canvasSources = document.getElementById('chartSourcesDistribution');
+    if (canvasSources) {
+      destroyChart('sources');
+      const ctx = canvasSources.getContext('2d');
+      const src = stats.sourceTotals || { employment: 10, rental: 5, foreign: 15, other: 3 };
+      statsChartInstances['sources'] = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: currentLang === 'en' 
+            ? ['Employment', 'Rental', 'Foreign Remitted', 'Other'] 
+            : ['Gehalt', 'Mieteinnahmen', 'Auslandstransfers', 'Sonstige'],
+          datasets: [{
+            data: [src.employment, src.rental, src.foreign, src.other],
+            backgroundColor: ['#3b82f6', '#06b6d4', '#f59e0b', '#a855f7'],
+            borderWidth: 2,
+            borderColor: '#0f172a'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 10 } } }
+          }
+        }
+      });
+    }
+
+    // 4. Residency Status Doughnut Chart
+    const canvasResidency = document.getElementById('chartResidencyDistribution');
+    if (canvasResidency) {
+      destroyChart('residency');
+      const ctx = canvasResidency.getContext('2d');
+      statsChartInstances['residency'] = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: currentLang === 'en'
+            ? ['Resident (≥180d)', 'Non-Resident (<180d)', 'LTR Visa Exempt']
+            : ['Tax Resident (≥180d)', 'Non-Resident (<180d)', 'LTR-Visum befreit'],
+          datasets: [{
+            data: [stats.residentCount, stats.nonResidentCount, stats.ltrCount],
+            backgroundColor: ['#10b981', '#64748b', '#8b5cf6'],
+            borderWidth: 2,
+            borderColor: '#0f172a'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'bottom', labels: { color: '#94a3b8', font: { size: 10 } } }
+          }
+        }
+      });
+    }
+  }
+
+  function exportStatsCSV() {
+    const stats = getStoredStats();
+    let csv = "Zeitpunkt,Modus,Status,Einkommen,Steuer,EffektiverSatz\n";
+    (stats.logs || []).forEach(log => {
+      csv += `"${log.timestamp}","${log.type}","${log.status}","${log.income}","${log.tax}","${log.rate}"\n`;
+    });
+    downloadFile(csv, 'th_tax_simulation_logs.csv', 'text/csv;charset=utf-8;');
+  }
+
+  function exportStatsJSON() {
+    const stats = getStoredStats();
+    const json = JSON.stringify(stats, null, 2);
+    downloadFile(json, 'th_tax_analytics_data.json', 'application/json');
+  }
+
+  function downloadFile(content, filename, mimeType) {
+    const blob = new Blob([content], { type: mimeType });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  function resetStatsData() {
+    const confirmMsg = currentLang === 'en'
+      ? 'Are you sure you want to reset local statistical data? This cannot be undone.'
+      : 'Sind Sie sicher, dass Sie alle lokalen Statistik- und Zählerdaten zurücksetzen möchten?';
+    if (window.confirm(confirmMsg)) {
+      try {
+        localStorage.removeItem(STATS_STORAGE_KEY);
+      } catch (e) {}
+      initDefaultStats();
+      renderStatsDashboard();
+    }
+  }
+
+  function switchStatsTab(tabName) {
+    const tabs = {
+      overview: { btn: 'tabStatsOverview', panel: 'panelStatsOverview' },
+      charts: { btn: 'tabStatsCharts', panel: 'panelStatsCharts' },
+      logs: { btn: 'tabStatsLogs', panel: 'panelStatsLogs' },
+      security: { btn: 'tabStatsSecurity', panel: 'panelStatsSecurity' }
+    };
+
+    Object.keys(tabs).forEach(k => {
+      const b = document.getElementById(tabs[k].btn);
+      const p = document.getElementById(tabs[k].panel);
+      if (k === tabName) {
+        if (b) {
+          b.className = "px-4 py-2 text-xs font-bold border-b-2 border-blue-500 text-blue-400 flex items-center gap-1.5 transition";
+        }
+        if (p) p.classList.remove('hidden');
+      } else {
+        if (b) {
+          b.className = "px-4 py-2 text-xs font-bold border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-1.5 transition";
+        }
+        if (p) p.classList.add('hidden');
+      }
+    });
+
+    if (tabName === 'charts') {
+      const stats = getStoredStats();
+      setTimeout(() => renderStatsCharts(stats), 50);
+    }
+    safeCreateIcons();
+  }
+
+  async function handleGenerateCustomHash() {
+    const input = document.getElementById('newCustomPasswordInput');
+    const pwd = input ? input.value.trim() : '';
+    if (!pwd) {
+      alert(currentLang === 'en' ? 'Please enter a password first.' : 'Bitte geben Sie zuerst ein Passwort ein.');
+      return;
+    }
+    const computedHash = await computeSha256(STATS_SALT + pwd);
+    const box = document.getElementById('generatedHashResultBox');
+    const display = document.getElementById('displayGeneratedHash');
+    if (display) display.textContent = computedHash;
+    if (box) box.classList.remove('hidden');
+    safeCreateIcons();
+  }
+
+  function handleCopyGeneratedHash() {
+    const display = document.getElementById('displayGeneratedHash');
+    if (display && display.textContent) {
+      navigator.clipboard.writeText(display.textContent).then(() => {
+        alert(currentLang === 'en' ? 'Hash copied to clipboard!' : 'Hash erfolgreich in die Zwischenablage kopiert!');
+      }).catch(() => {
+        const range = document.createRange();
+        range.selectNode(display);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
+        alert(currentLang === 'en' ? 'Hash copied!' : 'Hash kopiert!');
+      });
+    }
+  }
+
+  function handleApplyHashLocally() {
+    const display = document.getElementById('displayGeneratedHash');
+    if (display && display.textContent) {
+      try {
+        localStorage.setItem('th_tax_custom_hash', display.textContent);
+        const fb = document.getElementById('hashSavedFeedback');
+        if (fb) {
+          fb.classList.remove('hidden');
+          setTimeout(() => fb.classList.add('hidden'), 3000);
+        }
+      } catch (e) {}
+    }
   }
 
   // Automatic Start

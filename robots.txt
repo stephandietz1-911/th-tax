@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://stephandietz1-911.github.io/th-tax/sitemap.xml
